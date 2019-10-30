@@ -6,9 +6,20 @@ namespace MonthOfCSharp
     {
         static void Main(string[] args)
         {
-            
+            int t = 2;
+            Looper(t);
         }
 
+        //Day 4
+        public static void Looper(int n)
+        {
+            for (int i = 1; i < 11; i++)
+            {
+                var buffer = n * i;
+                Console.WriteLine(n + " x " + i + " = " + buffer);
+            }
+        }
+        
         //Day 3
         public static void PrintWeird(int n)
         {
