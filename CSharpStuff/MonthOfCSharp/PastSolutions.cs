@@ -5,6 +5,25 @@ namespace MonthOfCSharp
 {
     public class PastSolutions
     { 
+        //Day 9 solution
+        static int factorial(int n)
+        {
+            /*int fact = 3;
+
+            int result = factorial(fact);
+            
+            Console.WriteLine(result);*/
+            
+            if (n <= 1)
+            {
+                return n;
+            }
+            else
+            {
+                return n * factorial(n-1);
+            }
+        }
+        
         //Day8
         public static void DictionarySolution()
         {
