@@ -10,7 +10,36 @@ namespace MonthOfCSharp
             
         }
 
-        
+        //Day7
+        public static int[] ArrayReverser(int N, int[] array)
+        {
+            /*int[] newAr = new[] {1, 2, 3, 4, 5};
+
+            foreach (var value in newAr)
+            {
+                Console.Write(value.ToString() + " ");
+            }
+
+            Console.WriteLine();
+            int[] jumble = ArrayReverser(5, newAr);
+
+            foreach (var value in jumble)
+            {
+                Console.Write(value.ToString() + " ");
+            }*/
+            
+            int[] reverseAr = new int[N];
+
+            int j = 0;
+            
+            for (int i = array.Length-1; i >= 0; i--)
+            {
+                reverseAr[j] = array[i];
+                j++;
+            }
+
+            return reverseAr;
+        }
         
         //Day 6
         public static string NamePrinter(string word)
