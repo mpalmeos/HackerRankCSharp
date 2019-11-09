@@ -9,7 +9,7 @@ namespace MonthOfCSharp
     p.yearPasses();
     p.amIOld();*/
     
-    //Day 4
+    //Day 4 
     public class Person
     {
         public int age;  

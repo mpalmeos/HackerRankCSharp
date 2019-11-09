@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace MonthOfCSharp
 {
@@ -6,13 +7,53 @@ namespace MonthOfCSharp
     {
         static void Main(string[] args)
         {
-            int t = 2;
-            Looper(t);
+            
         }
 
-        //Day 4
+        
+        
+        //Day 6
+        public static string NamePrinter(string word)
+        {
+            /*int repeatTimes = int.Parse(Console.ReadLine());
+            List<string> jumbleWords = new List<string>();
+
+            for (int i = 0; i < repeatTimes; i++)
+            {
+                string nameValue = Console.ReadLine();
+                jumbleWords.Add(NamePrinter(nameValue));
+            }
+
+            foreach (var word in jumbleWords)
+            {
+                Console.WriteLine(word);
+            }*/
+            
+            string word1 = null;
+            string word2 = null;
+            char[] letters = word.ToCharArray();
+
+            for (int i = 0; i < word.Length; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    word1 = word1 + letters[i];
+                }
+                else
+                {
+                    word2 = word2 + letters[i];
+                }
+            }
+            
+            return word1 + " " + word2;
+        }
+        
+        //Day 5
         public static void Looper(int n)
         {
+            //int t = 2;
+            //Looper(t);
+            
             for (int i = 1; i < 11; i++)
             {
                 var buffer = n * i;
